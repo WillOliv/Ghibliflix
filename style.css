@@ -1,22 +1,38 @@
-* {
-    padding: 0.5vw;
-    margin: 0.5vw;
-    border: solid black;
-
-}
-
 body{
     background-color: black;
     color: white;
+    margin: 1vw;
 }
 
-header {
-    display: flex;
+header{
     background-color: red;
+
+    display: flex;
+    align-items: center;
+
+    height: 5vh;
+
+    padding: 0 2vw;
 }
 
-.nav-bar{
-    background-color: green
+header .logo{
+    font-size: 2vw;
+}
+
+header .nav-bar{
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 20%;
+
+    margin-left: 3vw;
+}
+
+.nav-bar a{
+    color: inherit;
+    font-size: 1.1vw;
+    text-decoration: none;
 }
 
 main{
@@ -25,8 +41,67 @@ main{
 
 .vitrine{
     background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+    height: 70vh;
+}
+
+.vitrine-background{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+.vitrine img{
+    width: 100%;
+    height: 100%;
+}
+
+.vitrine-description {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+
+    width: 30%;
+    height: 80%;
+
+    margin: 1vw;
+}
+
+.description-title{
+    font-size: 4vw;
+    text-align: center;
+}
+
+.description-sinopse{
+    margin: 0 1vw;
+}
+
+.description-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.description-buttons button{
+    font-size: 1vw;
+
+    width: 25%;
+    
+    margin: 1vw;
 }
 
 .carrousels{
     background-color: purple;
+}
+
+#carrousel{
+    border: solid black;
 }
