@@ -1,16 +1,19 @@
 $('.owl-carousel').owlCarousel({
+    
     loop:false,
-    margin:5,
     nav:false,
+    
+    touchDrag :true,
+    
     responsive:{
         0:{
             items: 1.5
         },
         600:{
-            items:3
+            items: 3.5
         },
         1000:{
-            items: 5
+            items: 4
         }
     }
 })
